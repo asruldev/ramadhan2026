@@ -1,0 +1,98 @@
+:root {
+  --hijau-terang: #4CAF50;
+  --hijau-gelap: #2E7D32;
+  --emas: #FFD54F;
+  --krem: #FFF8E1;
+  --biru-malam: #1A237E;
+  --putih: #FFFFFF;
+  --shadow: rgba(46, 125, 50, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background: linear-gradient(180deg, #E8F5E9 0%, #FFF8E1 50%, #E3F2FD 100%);
+  min-height: 100vh;
+  color: var(--biru-malam);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: 'Fredoka', sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+/* Animasi bintang di background */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.star {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.pulse {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+.stars-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.stars-bg .star {
+  position: absolute;
+  background: var(--emas);
+  border-radius: 50%;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.header-moon {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-title {
+  font-size: 2rem;
+  color: var(--hijau-gelap);
+  font-weight: 700;
+}
+
+.header-subtitle {
+  font-size: 1.2rem;
+  color: var(--biru-malam);
+  opacity: 0.9;
+}

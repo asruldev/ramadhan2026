@@ -1,0 +1,45 @@
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-tab {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  background: var(--putih);
+  color: var(--hijau-gelap);
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.nav-tab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px var(--shadow);
+}
+
+.nav-tab.active {
+  background: var(--hijau-gelap);
+  color: var(--putih);
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .nav-tab {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}

@@ -1,0 +1,192 @@
+.sholat-pilih-wrap {
+  margin-bottom: 1.5rem;
+}
+
+.sholat-pilih-intro {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  color: var(--biru-malam);
+  font-size: 1.05rem;
+}
+
+.sholat-pilih-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.sholat-pilih-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 0.75rem;
+  border-radius: 1.25rem;
+  border: 3px solid var(--hijau-gelap);
+  background: linear-gradient(180deg, #e8f5e9 0%, #c8e6c9 100%);
+  color: var(--biru-malam);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sholat-pilih-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.sholat-pilih-emoji {
+  font-size: 2.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.sholat-pilih-nama {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--hijau-gelap);
+}
+
+.sholat-pilih-rakaat {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.sholat-interaktif {
+  margin-top: 1rem;
+}
+
+.sholat-header-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.sholat-ganti-btn {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 1rem;
+  background: var(--krem);
+  color: var(--hijau-gelap);
+  border: 2px solid var(--emas);
+}
+
+.sholat-ganti-btn:hover {
+  background: var(--emas);
+}
+
+.sholat-judul-sekarang {
+  font-size: 1.2rem;
+  color: var(--hijau-gelap);
+  margin: 0;
+}
+
+.sholat-progress-bar {
+  height: 8px;
+  background: var(--krem);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.sholat-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--hijau-gelap), var(--hijau-terang));
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.sholat-step-counter {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--hijau-gelap);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.sholat-step-card {
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.sholat-step-rakaat {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--hijau-gelap);
+  background: var(--emas);
+  padding: 0.25rem 0.6rem;
+  border-radius: 1rem;
+}
+
+.sholat-step-gerakan {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.sholat-step-gerakan .gerakan-svg {
+  color: var(--hijau-gelap);
+}
+
+.sholat-step-label {
+  font-size: 1.2rem;
+  color: var(--hijau-gelap);
+  margin-bottom: 1rem;
+}
+
+.sholat-step-bacaan {
+  text-align: left;
+  padding-top: 1rem;
+  border-top: 2px dashed var(--hijau-gelap);
+}
+
+.sholat-step-arabic {
+  font-family: 'Amiri', serif;
+  font-size: 1.35rem;
+  line-height: 1.8;
+  color: var(--biru-malam);
+  margin: 0 0 0.5rem;
+}
+
+.sholat-step-latin {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--hijau-gelap);
+  margin: 0 0 0.35rem;
+}
+
+.sholat-step-arti {
+  font-size: 0.98rem;
+  color: var(--biru-malam);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.sholat-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sholat-nav-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  background: var(--hijau-gelap);
+  color: var(--putih);
+  min-width: 8rem;
+}
+
+.sholat-nav-btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.sholat-nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -31,6 +31,18 @@ npm run build
 
 Hasil build ada di folder `dist/`.
 
+## 🌐 Subdomain: ramadhan2026.asrul.dev (Squarespace)
+
+Situs ini dipakai dengan subdomain **ramadhan2026.asrul.dev** (domain asrul.dev di Squarespace).
+
+**Di Squarespace (DNS / Domain):**
+- Tambah **CNAME**: nama host `ramadhan2026` → nilai/target `asruldev.github.io`
+- Simpan; propagasi DNS bisa 5 menit–48 jam
+
+**Deploy:** `npm run deploy` (build + push ke branch `gh-pages`). File `public/CNAME` berisi `ramadhan2026.asrul.dev` agar GitHub Pages mengenali domain kustom.
+
+---
+
 ## 📤 Deploy ke GitHub Pages
 
 ### 1. Buat repo di GitHub

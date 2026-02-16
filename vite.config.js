@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// GitHub Pages: https://asruldev.github.io/ramadhan2026/
+// Custom domain: https://ramadhan2026.asrul.dev (subdomain dari Squarespace)
 export default defineConfig({
   plugins: [react()],
-  base: '/ramadhan2026/',
+  base: '/',
 })
